@@ -1,0 +1,228 @@
+/* ====================
+    General Styles
+==================== */
+@font-face {
+    font-family: Karla-Regular;
+    src: url("../fonts/Karla-Regular.ttf");
+}
+
+@font-face {
+    font-family: Karla-Bold;
+    src: url("../fonts/Karla-Bold.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    font-family: Karla-Regular;
+}
+
+.f-bold {
+    font-family: Karla-Bold;
+}
+
+/* Farbe: #323A45 / #848484 */
+
+/* ====================
+    Header Styles
+==================== */
+.nav-header {
+    margin: 6rem 10rem;
+}
+
+.nav-header a {
+    text-decoration: none;
+    color: #323A45;
+    font-family: Karla-Bold;
+    font-size: 2rem;
+}
+
+/* ====================
+    Main Styles
+==================== */
+
+/* --MAIN GRID START-- */
+.products-container {
+    margin: 0 10rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-areas:
+        "b1 b1 b1"
+        "s1 s2 s3"
+        "s4 s5 s6"
+
+        "b2 b2 b2"
+        "s7 s8 s9"
+        "s10 s11 s12"
+
+        "b3 b3 b3"
+        "s13 s14 s15"
+        "s16 s17 s18"
+        "b4 b4 b4"
+
+        "s19 s20 s21"
+        "s22 s23 s24"
+
+        "b5 b5 b5"
+        "s25 s26 s27"
+    ;
+}
+
+section article img {
+    width: 100%;
+}
+
+.b1 {
+    grid-area: b1;
+}
+
+.b2 {
+    grid-area: b2;
+}
+
+.b3 {
+    grid-area: b3;
+}
+
+.b4 {
+    grid-area: b4;
+}
+
+.b5 {
+    grid-area: b5;
+}
+
+/* --MAIN GRIND END-- */
+
+.product-name,
+.price {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #323A45;
+}
+
+.brand-name {
+    font-size: 2rem;
+    color: #848484;
+}
+
+.flexy {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ====================
+    Footer Styles
+==================== */
+.footer-container {
+    margin: 0 10rem 10rem 10rem;
+    display: flex;
+    gap: 8rem;
+    font-size: 1.8rem;
+}
+
+.footer-container h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.footer-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container div a,
+.footer-container div p span {
+    text-decoration: none;
+    color: #323A45;
+    font-family: Karla-Bold;
+}
+
+.footer-bottom-left {
+    margin: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: #848484;
+}
+
+.footer-bottom-left a {
+    text-decoration: none;
+    color: #848484;
+}
+
+/* merkwürdigerweise erhalten alle p elemnte ein margin-bottom von 1rem,
+möglicherweise liegt es am Bootstrap */
+p {
+    margin: 0;
+}
+
+/* -- Hover effects -- */
+.social-links a:hover,
+.products-container a:hover,
+.nav-header a:hover {
+    opacity: 0.5;
+    transition: 0.4s linear;
+}
+
+/* ========== MOBILE ============ */
+/* Angelehnt an das Bootstrap Breakpoint(≥992px)*/
+@media only screen and (max-width: 991px) {
+    .products-container {
+        margin: 0 10rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(32, auto);
+        grid-template-areas:
+            "b1"
+            "s1"
+            "s2"
+            "s3"
+            "s4"
+            "s5"
+            "s6"
+            "b2"
+            "s7"
+            "s8"
+            "s9"
+            "s10"
+            "s11"
+            "s12"
+            "b3"
+            "s13"
+            "s14"
+            "s15"
+            "s16"
+            "s17"
+            "s18"
+            "b4"
+            "s19"
+            "s20"
+            "s21"
+            "s22"
+            "s23"
+            "s24"
+            "b5"
+            "s25"
+            "s26"
+            "s27";
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+    }
+}

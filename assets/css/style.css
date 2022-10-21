@@ -229,4 +229,12 @@ p {
         flex-direction: column;
         margin-top: 8rem;
     }
+
+    .footer-container {
+        margin: 0 5rem 10rem 5rem;
+    }
+
+    .footer-bottom-left {
+        margin: 2rem 5rem;
+    }
 }

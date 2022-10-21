@@ -170,7 +170,7 @@ section article img {
     font-size: 4rem;
 }
 
-/* merkwürdigerweise erhalten alle p elemnte ein margin-bottom von 1rem,
+/* merkwürdigerweise erhalten alle p elemente ein margin-bottom von 1rem,
 möglicherweise liegt es am Bootstrap */
 p {
     margin: 0;

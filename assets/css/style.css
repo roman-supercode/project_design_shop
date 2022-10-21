@@ -162,6 +162,14 @@ section article img {
     color: #848484;
 }
 
+#sprungmarke {
+    text-decoration: none;
+    position: fixed;
+    bottom: 7%;
+    right: 2%;
+    font-size: 4rem;
+}
+
 /* merkwürdigerweise erhalten alle p elemnte ein margin-bottom von 1rem,
 möglicherweise liegt es am Bootstrap */
 p {

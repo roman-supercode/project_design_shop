@@ -179,6 +179,10 @@ p {
 /* ========== MOBILE ============ */
 /* Angelehnt an das Bootstrap Breakpoint(≥992px)*/
 @media only screen and (max-width: 991px) {
+    .nav-header {
+        margin: 6rem 5rem;
+    }
+
     .products-container {
         margin: 0 5rem;
         display: grid;

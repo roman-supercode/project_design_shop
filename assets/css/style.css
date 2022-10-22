@@ -177,11 +177,17 @@ p {
 }
 
 /* -- Hover effects -- */
+.Social-links a,
+.products-container a,
+.nav-header a {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
 .social-links a:hover,
 .products-container a:hover,
 .nav-header a:hover {
     opacity: 0.5;
-    transition: 0.4s linear;
 }
 
 /* ========== MOBILE ============ */
